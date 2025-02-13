@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+  <nav id="navbar-ejemplo" class="navbar fixed-top navbar-expand-lg justify-content-center">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./logobluework.png" width="100rem"> </a>
+        <div class="agendar ">
+          <button class="btn btn-outline-success cotiza" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">QUIERO COTIZAR</button>
+        </div> 
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#nosotros">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#politicas">POLÍTICAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#precios">¿CÓMO FUNCIONA?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-bottom ventana" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body redes d-flex">
+      <div>
+        <a href="mailto:blueworktask@gmail.com" target="_blank">
+          <img src="./gmail.png" width="70rem">
+        </a>
+      </div>
+      <div>
+        <a href="https://wa.me/c/573127842581" target="_blank">
+          <img src="./whatsapp.png" width="70rem">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/blueworktask?igsh=Y3BqaHJ5dDY1ZXFp&utm_source=qr" target="_blank">
+          <img src="./instagram.png" width="70rem">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-ejemplo" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+  <div class="position-relative" >
+    <img class="portada  z-1 " src="./portada2.png" width="100%">
+    <div id="carouselExampleSlidesOnly" class="inicio carousel slide z-2 position-absolute top-50 start-50 translate-middle text-start" data-bs-ride="carousel">
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <h3 class="titulos">SOMOS TU MEJOR ALIADO EN ESTE EMOCIONANTE MUNDO DEL APRENDIZAJE</h3>
+        </div>
+        <div class="carousel-item">
+          <h3 class="titulos">¡ESTAMOS AQUÍ PARA AYUDARTE A DESTACAR Y ALCANZAR TUS METAS!</h3>
+        </div>
+        <div class="carousel-item">
+          <h3 class="titulos">TU DESCANSA, NOSOTROS HACEMOS TU TRABAJO POR TI.</h3>
+        </div>
+        <div class="carousel-item">
+          <h3 class="titulos">TU EXITO ES NUESTRA PRIORIDAD NÚMERO UNO</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <section id="nosotros" class="justify-content-center">
+      <h2 class="titulos" >NOSOTROS</h2>
+      <p class="texto-desc">En Blue Work Task, nos especializamos en brindar una amplia gama de servicios académicos y de apoyo, diseñados para ayudarte a alcanzar tus objetivos educativos con confianza y excelencia.</p>
+      <div class="row row-cols-1 row-cols-md-4 g-4 m-5">
+        <script>
+          const items = [
+            { title: "ENSAYOS", img: "./ensayos.jpg", text: "Te ayudamos a elaborar ensayos persuasivos y bien estructurados, con contenido relevante y citas adecuadas." },
+            { title: "TALLERES", img: "./talleres.jpg", text: "Asistimos en la realización de tareas específicas, asegurando cumplir con los requisitos y objetivos establecidos." },
+            { title: "ANALISIS DE TEXTOS", img: "./analisis.jpg", text: "Realizamos análisis detallados de textos literarios, académicos o científicos, proporcionando insights y perspectivas críticas." },
+            { title: "MATERIALES DE ESTUDIO", img: "./materiales.jpg", text: "Creamos materiales de estudio personalizados, adaptados a tus necesidades y estilo de aprendizaje." },
+            { title: "PROYECTOS DE INVESTIGACIÓN", img: "./proyectos.jpg", text: "Colaboramos en el desarrollo y ejecución de proyectos de investigación, desde la formulación de la pregunta hasta la presentación de resultados." },
+            { title: "PRESENTACIONES", img: "./presentaciones.jpg", text: "Diseñamos presentaciones atractivas usando Canva, PowerPoint, Prezi, entre otros." },
+            { title: "MAPAS CONCEPTUALES Y MENTALES", img: "./mapas.jpg", text: "Creamos mapas conceptuales y mentales claros y organizados para una mejor comprensión." },
+            { title: "INGLES", img: "./ingles.jpg", text: "Ofrecemos tutorías y ayuda personalizada con exámenes, trabajos y más para mejorar tu inglés." }
+          ];
+      
+          items.forEach((item, index) => { //item es el objeto actual e index es su posicion en el array, de esta forma cada id será unico
+            document.write(`
+              <div class="col carta">
+                <div class="card cart">
+                  <img src="${item.img}" class="s img-fluid" alt="${item.title}">
+                </div>
+                <button class="btn titulos" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas${index}">
+                  ${item.title}
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas${index}" aria-labelledby="offcanvasLabel${index}">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title canva titulos mt-5 ms-auto" id="offcanvasLabel${index}">${item.title}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p class="explicacion">${item.text}</p>
+                  </div>
+                </div>
+              </div>
+            `);
+          });
+        </script>
+      </div>
+
+    </section>
+
+    <section id="politicas">
+      <h2 class="titulos text-center">Nuestras Politicas y Garantias</h2>
+      <p class="texto-desc">¡Gracias por elegirnos para tu proyecto! Queremos asegurarnos de que estés completamente informad@ sobre nuestras politicas y garantias para que tu experiencia con nosotros sea lo mas fluida posible.</p>
+      
+    
+      <p class="d-inline-flex gap-1 col-11">
+        <button class="btn btnpoliticas mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Ver politicas
+        </button>
+      </p>
+      
+      <div class="collapse banner" id="collapseExample">
+        <div class="d-flex politicas">
+          <div>
+            <img class="politicaportada" src="./imgportadapolitica.jpg">
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide slider">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item carousel-articulo active">
+                <h5 class="politicatitulo"><li>Revisión Detallada</li></h5>
+                <p class=" texto-desc poli">Es responsabilidad del cliente revisar minuciosamente toda la información proporcionada para el trabajo solicitado. Cualquier error debido a información faltante que no se especificó previamente en la cotización no será elegible para correcciones gratuitas.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Adición de Información Posterior a la cotización</li></h5>
+                <p class=" texto-desc poli">Si después de cotizar un trabajo se requiere enviar información adicional, se reevaluará el costo del servicio si ya se ha realizado el pago previamente acordado.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Solicitud de correcciones</li></h5>
+                <p class=" texto-desc poli">Solo se aceptarán solicitudes de correcciones para el trabajo entregado por nosotros y basadas en la información proporcionada durante el proceso de cotización. No se realizarán correcciones para cambios realizados por el cliente o terceros despues de la entrega, ya que conservamos registros de los archivos originales para verificar cualquier modificación.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Plazo para Solicitar Correcciones</li></h5>
+                <p class=" texto-desc poli">Las solicitudes de correcciones deben realizarse dentro de las 24 horas posteriores a la entrega del trabajo. Después de este periodo, no se considerarán correcciones gratuitas.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Correcciones Extra y Costos Adicionales</li></h5>
+                <p class=" texto-desc poli">Las correcciones que requieran modificaciones más allá de las especificadas inicialmente en el trabajo o que excedan el tiempo hábil de solicitud tendrán un costo adicional.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Pagos</li></h5>
+                <p class=" texto-desc poli">Se requiere un pago inicial del 50% al finalizar la cotización, y el restante se pagará para la entrega del trabajo terminado. Se debe proporcionar una captura de pantalla al momento de realizar los pagos correspondientes.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Verificación de Pagos</li></h5>
+                <p class=" texto-desc poli">Todos los pagos serán verificados en nuestras cuentas corresspondientes. Cualquier intento de fraude o falsificación resultará en la suspensión del servicio solicitado.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Servicios Urgentes</li></h5>
+                <p class=" texto-desc poli">Los servicios de atención inmediata o urgente conllevan un recargo adicional, ya que variará segun la extensión, tiempo y complejidad del trabajo. La cotización debe realizarse previamente antes de brindar el servicio.</p>
+              </div>
+              <div class="carousel-item carousel-articulo">
+                <h5 class="politicatitulo"><li>Servicios No Prestados</li></h5>
+                <p class=" texto-desc poli">No ofrecemos servicios de falsificación de documentos ni aceptamos trueques como forma de pago.</p>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="precios" >
+      <h2 class="text-center titulos">DETERMINACIÓN DEL PRECIO</h2>
+      <p class="texto-desc">Al solicitar nuestros servicios en BlueWork Task, es importante tener en cuenta varios aspectos que influyen en el precio final.</p>
+      
+      <div id="miContenido" class="row contenido row-cols-1 row-cols-md-4 g-2 text-center">
+        <div class="col ">
+          <div class="card determinaPrecios">
+            <img src="./adicionales.jpg" class="card-img-top fotoprecios" alt="...">
+            <div class="card-body m-0">
+              <h6 class="card-title titulos">ADICIONALES</h6>
+              <p class="card-text">Al momento de cotizar con nosotros, es crucial proporcionar todos los detalles sobre el trabajo requerido. Cualquier solicitud adicional posterior a la cotización acordada implicará un costo adicional.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card determinaPrecios">
+            <img src="./interlineado.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title titulos">INTERLINEADO</h6>
+              <p class="card-text">El tipo de interlineado utilizado afecta la cantidad de paginas generadas. El interlineado 1.0 tiene un valor superior debido a su mayor extensión.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card determinaPrecios">
+            <img src="./normas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title titulos">NORMAS</h6>
+              <p class="card-text">Cada norma de redacción, como APA, INCONTEC, Vancouver, Chicago, entre otras, tiene su nivel de complejidad propio, lo que puede influir en el precio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card determinaPrecios">
+            <img src="./numeroPaginas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title titulos">NÚMERO DE PÁGINAS</h6>
+              <p class="card-text">Cuantas más páginas requiera el trabajo, mayor será el esfuerzo para redactarlo, lo que se reflejará en el precio final.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card determinaPrecios">
+            <img src="./Tipoproyectos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title titulos">PROYECTOS</h6>
+              <p class="card-text">Los proyectos tienden a ser más complejos y exigentes, lo que hace más costosos en comparación con trabajos estándar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card determinaPrecios">
+            <img src="./lecturas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title titulos">LECTURAS</h6>
+              <p class="card-text">Si el trabajo requiere lecturas adicionales, se tomará en cuenta el número de paginas, el interlineado y la complejidad del texto.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card determinaPrecios">
+            <img src="./requisitos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title titulos">REQUISITOS</h6>
+              <p class="card-text">La cantidad y complejidad de los requisitos del trabajo pueden influir significativamente en el precio final, incluso si el trabajo parece simple inicialmente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card determinaPrecios ">
+            <img src="./tiempo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title titulos">TIEMPO</h6>
+              <p class="card-text">El tiempo de anticipación con el que se solicita el trabajo también afecta el precio. Solicitar un trabajo con menos tiempo disponible resultará en un precio más alto debido a la urgencia.</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      <br>
+
+      <span class="aviso " >Te recomendamos solicitar los servicios con al menos 48 horas de anticipación para evitar costos adicionales significativos.</span>
+    </div>
+    </section>
+  </div>
+
+
+  <footer>
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>&nbsp;Cotiza Con Nosotros: 3127842581 &nbsp;&nbsp;&nbsp;&nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>&nbsp;Blueworktask</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

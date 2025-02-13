@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'mont';
+    src: url('./fuentes/Mont-HeavyDEMO.otf') format('truetype'); /* Ajusta la ruta */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: glacial;
+    src: url('./fuentes/GlacialIndifference-Regular.otf');
+}
+    
+
+.portada{
+    position:relative;
+}
+
+.agendar{
+    margin-left: 18%;
+    display: block;
+}
+
+.cotiza{
+    font-size: 1.2rem;
+    font-family: mont;
+}
+
+.nav-link{
+    font-family:glacial;
+    font-size: 1.4rem;
+}
+
+.ventana{
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline; /* O cualquier otro efecto de selección */
+  }
+  
+  .navbar-nav .nav-link {
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+.redes{
+    justify-content: space-around;
+}
+
+.navbar.scrolled {
+    background: whitesmoke;
+   
+}
+
+.inicio{
+    margin-left: -20rem;
+    margin-top: 10%;
+    opacity: 0;
+    transform: translateX(-100vw); /* Comienza fuera de la pantalla a la izquierda */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    
+}
+
+h3{
+    font-size: 4rem;
+    width: 40rem;
+    line-height: 1.1;
+    font-weight: lighter;
+    max-width: 100%;  /* 🔥 Evita que el texto sobrepase el ancho del contenedor */
+    word-wrap: break-word;  /* 🔥 Fuerza a que el texto se divida en palabras largas */
+    overflow-wrap: break-word; /* 🔥 Asegura que el texto largo se divida correctamente */
+}
+h2{
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 5rem;
+    color: rgb(12, 63, 106);
+}
+.titulos{
+    font-family: mont;
+    color: rgb(12, 63, 106);
+/*    width: 100%;  Hace que los botones ocupen el mismo espacio */
+    margin: auto; /* Los empuja hacia abajo para que estén alineados */
+/*    text-align: center;*/
+
+}
+
+  /* Activo (visible) */
+  .carousel-item.active {
+    opacity: 1; 
+  }
+  .animar-entrada {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+/* 🔥 Definimos la animación */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.carousel-item {
+    transform: none;
+    
+}
+  /* Próximo elemento (debe entrar desde la izquierda) */
+  .carousel-item-next {
+    transform: translateX(-100%);
+    transition: transform 0s ease;
+  }
+
+  /* Elemento anterior (debe salir hacia la derecha) */
+  .carousel-item-prev {
+    transform: translateX(100%);
+    transition: transform 2s ease-in;
+    
+  }
+
+  /* Cuando cambia de diapositiva */
+  .active.carousel-item-end {
+    transform: translateX(0);
+  }
+
+  .active.carousel-item-start {
+    transform: translateX(100%);
+  }
+
+#nosotros{
+    background-image: url(./nosotros.jpg) ;
+    background-size:cover ;
+    background-position: 10rem;
+    text-align: center;
+}
+
+p{
+    font-family: glacial;
+}
+
+.texto-desc{
+    font-size: 2rem;
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    max-width: 100%;  /* 🔥 Evita que el texto sobrepase el ancho del contenedor */
+    word-wrap: break-word;  /* 🔥 Fuerza a que el texto se divida en palabras largas */
+    overflow-wrap: break-word; /* 🔥 Asegura que el texto largo se divida correctamente */
+
+}
+.poli{
+    font-size: 1rem;
+    width: 20rem;
+    margin-right:5rem ;
+}
+
+
+.card-img-top{
+    width: 100%;
+    height: 180px; /* Ajusta según necesites */
+    object-fit: cover; /* Evita que las imágenes se distorsionen */
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Hace que todas las tarjetas tengan la misma altura */
+  /*  width: 10rem;*/
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+}
+
+.carta{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.canva{
+    font-size: 200%;
+}
+
+.explicacion{
+    font-size: 1.5rem;
+}
+.banner{
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+#politicas{
+    background-image: url(./politicas1.jpg);
+    background-size: cover;
+    margin-top: -3rem;
+}
+
+.slider {
+    width: 500px;
+    height: 400px; /* 🔥 Asegura que el carrusel tenga siempre el mismo tamaño */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+.btnpoliticas{
+    background-color: rgb(12, 63, 106) ;
+    color: white;
+    font-family: glacial;
+}
+
+.politicaportada{
+    max-width: 350px; /* 🔥 Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+.carousel-articulo {
+    width: 100%; /* 🔥 Limita el ancho del carrusel */
+    height: 350px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem; /* 🔥 Evita que el contenido quede pegado a los bordes */
+    overflow: hidden;
+    transition: opacity 0s ease-out, transform 1s ease-out;
+
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: rgb(12, 63, 106);
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.politicatitulo{
+    background-color:  rgb(12, 63, 106);
+    border-radius: 5rem;
+    color: whitesmoke;
+    padding: 0.8rem;
+    font-family: glacial;
+    margin-top: 2rem;
+    text-align: center;
+    margin-right: auto;
+}
+
+.politicas{
+    display: flex;
+    align-items: center; /* 🔥 Alinea verticalmente la imagen y el carrusel */
+    justify-content:space-around; /* 🔥 Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* 🔥 Evita que se desborden en pantallas pequeñas */
+    gap: 2rem; /* 🔥 Agrega un espacio entre la imagen y el carrusel */
+    padding: 2rem;
+    margin: auto ;
+}
+
+.determinaPrecios{
+    width: 16rem;
+    margin: auto;
+    font-size:80%;
+}
+
+
+
+.aviso{
+    font-weight: bold;
+    font-size: small;
+    background-color:brown;
+    padding: 0.5rem;
+    color: white;
+    width: 100%;
+
+}
+
+.contenido {
+    opacity: 0;
+    transform: translateX(100rem);
+    transition: opacity 0.7s , transform 2s ;
+}
+
+.barraNavegacion{
+    background-color: rgb(241, 241, 241);
+  
+}
+
+/* Clase que se activará con JavaScript */
+.contenido.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+footer{
+    background-color: rgb(12, 63, 106);
+    color: whitesmoke;
+    margin-top: 0.2rem;
+    position:relative;
+    bottom: -1rem;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .row {
+      flex-direction: column; /* Las tarjetas se apilan verticalmente */
+    }
+    
+    .carta {
+      width: 70%;
+      transition: 0.5 ease all;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        display: none;
+    }
+    .texto-desc{
+        font-size: 1.5rem;
+    }
+  
+    .offcanvas {
+      width: 100%; /* El offcanvas ocupará toda la pantalla */
+    }
+  }
+
+@media (min-width: 577px) and (max-width: 991px) {
+    h2,h3{
+        font-size: 2rem;
+    }
+
+    .inicio{
+        margin-left: 0rem;
+        
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+  
+    .carta {
+      width: 40%; /* Se muestran dos tarjetas por fila */
+      margin: 20px;
+      transition: 0.5 ease all;
+    }
+  }
+  
+  /* Para pantallas grandes (escritorio) */
+  @media (min-width: 992px) {
+    .carta {
+      width: 23%; /* Se muestran cuatro tarjetas por fila */
+    }
+    .inicio{
+        margin-left: -20rem;
+        font-size: 60%;
+    }
+  }
+  
+
